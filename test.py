@@ -1,47 +1,31 @@
+# test_google_search_firefox.py
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.keys import Keys
+import time
 
+# Set up the WebDriver for Firefox
+driver = webdriver.Firefox()  # Ensure you have GeckoDriver installed
+  
+try:
+    # Open Google
+    driver.get("https://www.google.com")
 
-def startbot(username, password, url):
-    # Initialize the WebDriver using ChromeDriverManager
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    # Find the search box using its name attribute value
+    search_box = driver.find_element(By.NAME, "q")
 
-    try:
-        # Open the specified URL
-        driver.get(url)
+    # Type "Ryan Gosling" in the search box
+    search_box.send_keys("Ryan Gosling")
 
-        # Wait for the username field to be present and enter the username
-        username_field = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.NAME, "username"))
-        )
-        username_field.send_keys(username)
+    # Press Enter to submit the search
+    search_box.send_keys(Keys.RETURN)
 
-        # Wait for the password field to be present and enter the password
-        password_field = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.NAME, "password"))
-        )
-        password_field.send_keys(password)
+    # Wait for a few seconds to let the results load
+    time.sleep(10)
 
-        # Wait for the login button to be clickable and click it
-        login_button = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.CSS_SELECTOR, "button[type='submit']"))
-        )
-        login_button.click()
+    # Print the title of the results page
+    print(driver.title)
 
-    except TimeoutException:
-        print("An element took too long to load. Please check the website structure or your connection.")
-    finally:
-        # Optional: close the driver after a delay or keep it open
-        # driver.quit()
-        pass
-
-# Define your credentials and URL
-username = "codesammy1000@gmail.com"
-password = "D!lk$@mU01221"
-url = "https://www.reddit.com/login/"
-
-# Start the bot with the given credentials and URL
-startbot(username, password, url)
+finally:
+    # Close the browser
+    driver.quit()
