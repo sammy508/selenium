@@ -1,24 +1,5 @@
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.common.keys import Keys
-# from selenium.webdriver.support.ui import WebDriverWait
 
-# driver = webdriver.chrome()
-
-# driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-# driver.find_element(By.Name, "username").send_keys("Admin")
-# driver.find_element(By.Name, "password").send_keys("admin123")
-# driver.find_element(By.NAME, "Loign")
-
-# act_title = driver.title
-# exp_title = "OrangeHRM"
-
-# if act_title == exp_title :
-#     print("Login test Passed")
-# else:
-#     print("Login test Failed")
-
-# driver.close()    
+# I am learnign to test and automate on selenium and want to explore more 
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
