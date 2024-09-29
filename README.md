@@ -1,14 +1,14 @@
 # selenium_with_python
 here i will explore selenium with python
 
-Web Driver  :<b>
+Web Driver  :< br / >
 . one of the component in selenium 
 . it is a module
 . web driver is an API
 ![image](https://github.com/user-attachments/assets/9a917400-7df5-403a-b56d-cf78c3fd174a)
 .: 3 layer architecture of an web application
 
-# Web driver Architecture <b>
+# Web driver Architecture < br / >
 - web driver contains so many classes and methods. By calling those methods we are able to interact with browser and these action are perfomed under APPLICATION. That's why Web driver is called API.
 - ![image](https://github.com/user-attachments/assets/f7971860-03e6-4e67-b664-98eb30cf01b2)
 - Architecture of selenium and it shows how selenium webdriver works
@@ -16,7 +16,7 @@ Web Driver  :<b>
 
 - Browser specific driver talk to browser using protocal calles W3C protocol. W3C stands for  **World Wide Web Consortium** and evry web have to follow this standard  protocol
 - 
-. **Selenium 4 Architecture** <b>
+. **Selenium 4 Architecture** < br / >
    ![image](https://github.com/user-attachments/assets/6f559cec-cdb0-4d4d-8dbe-9051a7f0c014)
 - they updated the json protocol to w3c protocol
 -  Selenium Language binding ---> W3c -->Browser Driver -->W3C --> Browser
@@ -32,7 +32,7 @@ Web Driver  :<b>
   3. Just open vscode terminal and enter this cmnd to install selenium on your Ide
    - pip install selenium
 
-. **Test Case**  <b>
+. **Test Case**  <b/>
 -Open web browser (chrome/edge/firefox)
 -Open url https://admin-demo.nopcommerce.com.login
 -provide Email (admin@yourstore.com)
