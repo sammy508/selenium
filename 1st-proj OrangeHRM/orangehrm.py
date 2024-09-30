@@ -12,7 +12,7 @@ driver = webdriver.Chrome()
 
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
-wait = WebDriverWait(driver,10)  # it waits 10 sec to load
+wait = WebDriverWait(driver,15)  # it waits 10 sec to load
 wait.until(EC.presence_of_element_located((By.NAME,"username"))).send_keys ("Admin")
 
 wait.until(EC.presence_of_element_located((By.NAME, "password"))).send_keys("admin123")
@@ -31,3 +31,4 @@ time.sleep(15)
 driver.close()  
 
 
+# .\venv\Scripts\Activate.ps1    cmnd to activate virtual environment and folder must be on selenium projects
