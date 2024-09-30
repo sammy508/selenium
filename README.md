@@ -47,6 +47,51 @@ here i will explore selenium with python
 - Capture title of the Dashboard page. (Actual title)
 - verify title of the page : "OrangeHRM" (expected)
 - Close Browser
+
+  **Locators** <br>
+  --> WHAT ARE LOCATORS? 
+    - Locators are methods that are used to locate HTML web elements for 
+      Selenium browser driver.
+      
+--> WHAT IT IS USED FOR? 
+    - It is used to locate any specific web element 
+    on the UI of AUT (application under test)
+
+ **Types of locators** <br>
+ ![image](https://github.com/user-attachments/assets/85e2629d-d80e-4a30-8315-21f75e13f7b5)  <br>
+
+ **Id**: <br>
+ my_element = driver.find_element(By.ID, 'Search box').send_keys("Sammy508")  <br>
+
+ **Name**  <br>
+ my_element = driver.find_element(By.Name, 'Submit_Search ').click()  <br>
+ 
+ **Link Text / Partial link text** <br>
+ ![image](https://github.com/user-attachments/assets/38548c07-2129-4e39-a5fe-7066ab9a9b29) <br>
+
+ Most of the time these Locators are mostly used in single web pages  <br>
+ . **Id** <br>
+ . **Name** <br>
+ . **Linktext** <br>
+ . **partial Linktext**  <br>
+ 
+ Sometimes we need to find out More than 1 elements in that case we use  these locators like  <br>
+ . **Classname** <br>
+ eg:  slider = driver.find_elements(By.CLASS_NAME, "homeslider-Container") <br>
+print(len(slider)) <br> 
+ ![image](https://github.com/user-attachments/assets/c05048ab-0f35-46f4-84f2-038359755d33) <br>
+
+ . **Tagname** <br>
+
+ Eg:   links = driver.find_elements(By.TAG_NAME, "a") <br>
+ print(len(links))
+ 
+ 
+ 
+
+ 
+ 
+
   
 
 
