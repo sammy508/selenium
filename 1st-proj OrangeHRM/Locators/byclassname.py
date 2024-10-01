@@ -14,3 +14,7 @@ driver.get("http://www.automationpractice.pl/index.php")
 
 sliders = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "homeslider-container")))
 print(len(sliders))
+
+# By TAG_NAMES
+tagsli= wait.until(EC.presence_of_all_elements_located((By.TAG_NAME, "homeslider-container")))
+print(len(tagsli))

@@ -56,6 +56,9 @@ here i will explore selenium with python
 --> WHAT IT IS USED FOR? 
     - It is used to locate any specific web element 
     on the UI of AUT (application under test)
+    <br>
+    ![alt text](Web-Element-Locators-Explained-By-Louise-J-Gibbs.png)
+    <br>
 
  **Types of locators** <br>
  ![image](https://github.com/user-attachments/assets/85e2629d-d80e-4a30-8315-21f75e13f7b5)  <br>
@@ -65,6 +68,10 @@ here i will explore selenium with python
 
  **Name**  <br>
  my_element = driver.find_element(By.Name, 'Submit_Search ').click()  <br>
+ instead use this approach  <br>
+ password_element = wait.until(EC.presence_of_element_located((By.NAME, "password")))
+    password_element.send_keys("admin123")   <br>
+
  
  **Link Text / Partial link text** <br>
  ![image](https://github.com/user-attachments/assets/38548c07-2129-4e39-a5fe-7066ab9a9b29) <br>
@@ -86,8 +93,24 @@ print(len(slider)) <br>
  Eg:   links = driver.find_elements(By.TAG_NAME, "a") <br>
  print(len(links))
  
+
+ **By. CLASS_NAME**
  
- 
+   driver.get("http://www.automationpractice.pl/index.php")
+
+   sliders = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, "homeslider-container")))
+   print(len(sliders))
+
+**CSS Selectors**
+We can address css selectors by <br>
+1. tag and ID <br>
+2. tag and class <br>
+3. tag and attribute <br>
+4. tag class and attribute <br>
+
+
+
+
 
  
  
