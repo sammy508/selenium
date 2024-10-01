@@ -103,10 +103,21 @@ print(len(slider)) <br>
 
 **CSS Selectors**
 We can address css selectors by <br>
-1. tag and ID <br>
-2. tag and class <br>
-3. tag and attribute <br>
-4. tag class and attribute <br>
+1. tag and ID    (tagname#ID)<br>
+2. tag and class   (tagname.class) <br>
+3. tag and attribute   (tagname[attribut = value])<br>
+4. tag class and attribute   (tagname.class[attribute= value]) <br>
+
+<br>
+**Xpath** <br>
+- Xpath are defined as Xml path  <br>
+-It uses HTML DoM Structure to locate elemnt on web page <br>
+-Its an address of an elemnt  <br>
+**Types** of xpath  : <br>
+.Relative Xpath  <br>
+.Absolute Xpath  <br>
+
+
 
 
 
