@@ -109,13 +109,36 @@ We can address css selectors by <br>
 4. tag class and attribute   (tagname.class[attribute= value]) <br>
 
 <br>
-**Xpath** <br>
+****Xpath**** <br>
 - Xpath are defined as Xml path  <br>
 -It uses HTML DoM Structure to locate elemnt on web page <br>
 -Its an address of an elemnt  <br>
 **Types** of xpath  : <br>
-.Relative Xpath  <br>
-.Absolute Xpath  <br>
+.Relative Xpath (partial xpath) <br>
+      Eg: //*[@id="u_0_9_UA"] (facebbok login button's rel xpath)
+.Absolute Xpath (Full xpath) <br>
+      Eg : /html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]/button  (Full xpath)
+<br>
+**DOM STRUCTURE** : <br>
+. Dom is an API interface provided by browser  <br>
+. When a web page is loaded, the browser creates a Document Object model of the page <br>
+
+# Difference Between Absolute and Relative Xpath <br>
+ 1. Absolute path statrts from Root HTML Node
+  Relative Xpath directly jumps to element on DOM <br><br>
+2. Absolute xpath start with / But Relative xpath starts with //   <br><br>
+3. In Absolute xpath we use only tags/ nodes But in Relative xpath we use Attributes <br><br>
+
+  We can use ** **selector HUb extension** **  on browser to capture x path automatically  <br>
+
+** **Reason to Pick relative xpath**  <br>
+1. If developer introduce new element then absolute path will be broken
+2. If Dev change the location then absolute xpath will be broken S0, we haave to pick relative xpath   <br>
+Absolute path are not Stable <br>
+
+**Xpath Options**  <br.
+
+and, or, contains(), start-with(), text()   <br>
 
 
 
