@@ -103,10 +103,10 @@ print(len(slider)) <br>
 
 **CSS Selectors**
 We can address css selectors by <br>
-1. tag and ID <br>
-2. tag and class <br>
-3. tag and attribute <br>
-4. tag class and attribute <br>
+1. tag and ID    (tagname#ID)<br>
+2. tag and class   (tagname.class) <br>
+3. tag and attribute   (tagname[attribut = value])<br>
+4. tag class and attribute   (tagname.class[attribute= value]) <br>
 
 
 
