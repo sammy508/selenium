@@ -108,6 +108,17 @@ We can address css selectors by <br>
 3. tag and attribute   (tagname[attribut = value])<br>
 4. tag class and attribute   (tagname.class[attribute= value]) <br>
 
+<br>
+**Xpath** <br>
+- Xpath are defined as Xml path  <br>
+-It uses HTML DoM Structure to locate elemnt on web page <br>
+-Its an address of an elemnt  <br>
+**Types** of xpath  : <br>
+.Relative Xpath  <br>
+.Absolute Xpath  <br>
+
+
+
 
 
 
