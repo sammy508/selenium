@@ -136,9 +136,28 @@ We can address css selectors by <br>
 2. If Dev change the location then absolute xpath will be broken S0, we haave to pick relative xpath   <br>
 Absolute path are not Stable <br>
 
-**Xpath Options**  <br.
+**Xpath Options**  <br>
 
 and, or, contains(), start-with(), text()   <br>
+
+ # Xpath with OR operator
+ wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='q' or @placeholder = 'search']"))).send_keys(search)
+
+ # xpath with and operator
+ 
+ wait.until(EC.presence_of_element_located((By.XPATH, "//input[@id='q' and @placeholder = 'search']"))).send_keys(search)
+
+# path with contains()
+
+wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(@class,'cart-icon-daraz')]"))).click()
+
+# path with strat-with()
+
+wait.until(EC.element_to_be_clickable((By.XPATH, "//*[starts-with(@type,'submit')]"))).click()
+
+         
+ 
+
 
 
 
