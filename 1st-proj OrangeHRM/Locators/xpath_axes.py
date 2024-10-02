@@ -10,15 +10,15 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 driver.get("https://money.rediff.com/bse/daily/groupa")
 
-# # self  xpath axes
-# text_msg = driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/self::a").text
-# print(text_msg)
+# self  xpath axes
+text_msg = driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/self::a").text
+print(text_msg)
 
-# # xpath with parents
+# xpath with parents
 
-# text_msgparent= driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4").text
-# print(text_msgparent)
-# # KFIN Technologies  it prints the same value of self because its parent doesnt have any text
+text_msgparent= driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4").text
+print(text_msgparent)
+# KFIN Technologies  it prints the same value of self because its parent doesnt have any text
 
 # child
 text_msgchild= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div")
