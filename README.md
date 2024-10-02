@@ -162,14 +162,14 @@ wait.until(EC.element_to_be_clickable((By.XPATH, "//*[starts-with(@type,'submit'
 
 
 # # self  xpath axes
-# text_msg = driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/self::a").text
-# print(text_msg)
+ text_msg = driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/self::a").text
+ print(text_msg)
 
 # # xpath with parents
 
-# text_msgparent= driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4").text
-# print(text_msgparent)
-# # KFIN Technologies  it prints the same value of self because its parent doesnt have any text
+ text_msgparent= driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4").text
+ print(text_msgparent)
+ KFIN Technologies  it prints the same value of self because its parent doesnt have any text
 
 # child
 text_msgchild= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div")
