@@ -155,8 +155,54 @@ wait.until(EC.element_to_be_clickable((By.XPATH, "//*[contains(@class,'cart-icon
 
 wait.until(EC.element_to_be_clickable((By.XPATH, "//*[starts-with(@type,'submit')]"))).click()
 
-         
- 
+# Xpath Axes  
+  An axis represents a relationship to the context (current) node, and is used to locate nodes relative to that node on the tree.  <br>
+  ![alt text]({5559403E-CDF4-4E86-9D5A-3D0D054BCAB1}.png)  <br>
+  
+
+
+# # self  xpath axes
+# text_msg = driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/self::a").text
+# print(text_msg)
+
+# # xpath with parents
+
+# text_msgparent= driver.find_element(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4").text
+# print(text_msgparent)
+# # KFIN Technologies  it prints the same value of self because its parent doesnt have any text
+
+# child
+text_msgchild= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div")
+print(len(text_msgchild))
+
+# ancestor
+text_ances= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/parent::h4/child::div")
+print(len(text_ances))
+
+
+# desendants node
+
+text_dece = driver.find_elements(By.XPATH, "//a[contains(text(),'KFIN Technologies')]/ancestor::div/parent::div/descendant::*")
+print(len(text_dece))
+
+
+
+# Preceding Sibling
+Definition: Selects only sibling nodes that come before the current node at the same level in the hierarchy.
+
+ #preceding - sibling
+text_pre= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div/preceding-sibling::*")
+print(len(text_pre))
+
+# following sibling
+
+its also like a preceding ones  <br>
+#following - sibling
+text_foll= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div/following-sibling::div")
+print(len(text_foll))
+
+
+
 
 
 
