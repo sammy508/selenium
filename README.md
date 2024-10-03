@@ -201,6 +201,49 @@ its also like a preceding ones  <br>
 text_foll= driver.find_elements(By.XPATH,"//a[contains(text(),'KFIN Technologies')]/ancestor::div/ancestor::div/following-sibling::div")
 print(len(text_foll))
 
+# Selenium WebDriver Commands
+
+What are Selenium WebDriver Commands? <br>
+Selenium WebDriver commands are set of functions and method used for controlling or automating the web browser. these command helps developer and tester to write script programmatically using various languages (Java, C#, Python, etc.) to interact with web elements or perform various automation task.
+
+** Types of selenium web driver commands** <br>
+1. Browser commands  <br> <br
+    Browser commands provide exact control over the browser’s actions, like getting specific pages, extracting information such as page titles and URLs, accessing page source code, and controlling browser windows.
+
+    --> title (sntx: driver.title) <br>
+    --> get() (sntx: driver.get('url)) <br>
+   ---> current_url(): (sntx: driver.current_url) <br>
+   ---> page_source() : (sntx: driver.pagesource) <br>
+            It captures the source code of the web pages (inspect and view source code)
+    <br>
+
+2. Conditional commands <br>
+     In Selenium with Python, we can use conditional commands to perform different actions based on specific conditions during your web automation tasks.
+     These methods belongs to web element and these commmands can access only through web elements not from driver<br>
+
+     1. is_displayed():  (sntx:- )<br>
+          . Checks if the element is visible on the page <br>
+          . Returns: True if the element is visible; otherwise, it returns False. <br>
+          .  Useful for determining if an element can be interacted with (like clicking).
+
+     2. is_enabled():  (sntx: )  <br>
+          . Checks if the element is enabled and can be interacted with. <br>
+          . Returns True if the element is enabled; otherwise, it returns False. <br>
+          .  Commonly used for buttons, input fields, and links to see if they can be clicked or entered. <br><br>
+
+     3. is_selected(): (sntx: )  <br>
+           . It is mostly ussed on checkbox and radio button to check the conditions <br>
+           . Returns: True if the element is selected; otherwise, it returns False. <br>
+
+<br>
+3. Web element commands <br>
+
+
+** Some mostly used commands**  <br>
+
+1. 
+
+
 
 
 
