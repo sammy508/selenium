@@ -10,6 +10,7 @@ import time
 driver = webdriver.Chrome()
 
 driver.get('https://member.daraz.com.np/user/login?spm=a2a0e.tm80335409.header.login.28a379e0mn2fUv')
+driver.get('https://www.facebook.com/events/894052652527381/944916830774296/')
 driver.back()
 
 driver.forward()

@@ -247,9 +247,44 @@ Selenium WebDriver commands are set of functions and method used for controlling
     3. refresh() <br>
     
 
+5. Wait commands <br>
 
+   In Selenium, wait commands are mechanisms used to pause the execution of your test scripts until a certain condition is met, allowing you to interact with web elements reliably  <br>
 
+   There are two types of wait commands<br>
 
+   1. Implicit wait():  <br>
+     driver.implicitly_wait(10)<br>
+     Implicit Wait is a global wait that is set for the entire duration of the WebDriver instance. <br>
+
+   2. Explicit wait(): <br>
+      Explicit Wait allows you to wait for a specific condition to occur before proceeding <br>
+      its more flexible tha implicit wait <br>
+
+** time.sleep()  ** 
+   time.sleep() paused the coode for the certain time and it has certain drawbacks: <br>
+   
+   1. Perfomance of the script is very poor
+   2. if the targeted element isn't found in mentioned time then it got exception error
+
+# find_elements():
+
+** text vs get_attribute in selenium **
+** "text" **
+   Purpose: Retrieves the visible text of an element.
+   Usage: This is commonly used when you want to extract text that a user can see on the webpage.
+   It return inner text of an elements
+  ///** <div id="parent">
+    This is the parent text.
+    <span>This is the child text.</span>
+   </div>  ***//
+
+** get_attribite() **
+   Purpose: Retrieves the value of a specified attribute of an element.  <br>
+   Usage: Use this when you need to access attributes like href, value, class, or any custom attribute.<br>
+
+   element = driver.find_element(By.ID, "example")  <br>
+   attribute_value = element.get_attribute("class")  <br>
 
 
 
