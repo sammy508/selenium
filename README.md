@@ -255,11 +255,12 @@ Selenium WebDriver commands are set of functions and method used for controlling
 
    1. Implicit wait():  <br>
      driver.implicitly_wait(10)<br>
-     Implicit Wait is a global wait that is set for the entire duration of the WebDriver instance. <br>
+     Implicit Wait is a global wait that is set for the entire duration of the WebDriver instance till the exit/ end of code. <br>
 
    2. Explicit wait(): <br>
       Explicit Wait allows you to wait for a specific condition to occur before proceeding <br>
       its more flexible tha implicit wait <br>
+      it works under condition
 
 ** time.sleep()  ** 
    time.sleep() paused the coode for the certain time and it has certain drawbacks: <br>
