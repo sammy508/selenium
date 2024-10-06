@@ -207,8 +207,8 @@ What are Selenium WebDriver Commands? <br>
 Selenium WebDriver commands are set of functions and method used for controlling or automating the web browser. these command helps developer and tester to write script programmatically using various languages (Java, C#, Python, etc.) to interact with web elements or perform various automation task.
 
 ** Types of selenium web driver commands** <br>
-1. Browser commands  <br> <br
-    Browser commands provide exact control over the browser’s actions, like getting specific pages, extracting information such as page titles and URLs, accessing page source code, and controlling browser windows.
+1. Application commands  <br> <br
+   Application commnds
 
     --> title (sntx: driver.title) <br>
     --> get() (sntx: driver.get('url)) <br>
@@ -235,14 +235,17 @@ Selenium WebDriver commands are set of functions and method used for controlling
            . It is mostly ussed on checkbox and radio button to check the conditions <br>
            . Returns: True if the element is selected; otherwise, it returns False. <br>
 
-<br>
-3. Web element commands <br>
+   <br>
+3. Browser  commands <br>
+    1. close()   // kills on once and app still running on memomachine  <br>
+    2. quit()    // kills all browser tabs on once and kill properly <br>
 
 
-** Some mostly used commands**  <br>
-
-1. 
-
+4. Navigational commands <br>
+    1. back() <br>
+    2. forward() <br>
+    3. refresh() <br>
+    
 
 
 
