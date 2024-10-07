@@ -287,6 +287,29 @@ Selenium WebDriver commands are set of functions and method used for controlling
    element = driver.find_element(By.ID, "example")  <br>
    attribute_value = element.get_attribute("class")  <br>
 
+** Checkboxes in selenium ** <br>
+      Things we can do with checkboxes: <br>
+      1. select <br>
+      2. unselect <br>
+
+
+   ** How to locate checkboxes** <br>
+   
+   # 1. For specific checkboxes
+   # checkbox = driver.find_element(By.XPATH, "//label[@for='RESULT_CheckBox-8_0']").click()
+
+   # 2. for multiple checkboxes
+   checkboxes = driver.find_elements(By.XPATH, "//*[@id='q15']/table/tbody/tr[*]" )  <br>
+
+   ** To select all checkboxes **  <br>
+
+      for ckeckbox in checkboxs:
+       checkbox.click()
+  <br>
+
+  # Links in selenium
+  
+
 
 
 
