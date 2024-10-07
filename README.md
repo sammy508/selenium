@@ -308,7 +308,14 @@ Selenium WebDriver commands are set of functions and method used for controlling
   <br>
 
   # Links in selenium
-  
+  ** TYPES ** <br>
+      1. Internal Links <br>
+          Navigate on another location on same page
+      2. External Links <br>
+            a hyperlink that leads to a page or resource outside a particular website  <br>
+      3. Broken Links <br>
+         hyperlinks or URLs on a web page that are not functioning as expected and it doesn't have target are called broken links<br>
+
 
 
 
