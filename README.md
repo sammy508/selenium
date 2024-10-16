@@ -341,8 +341,39 @@ Selenium WebDriver commands are set of functions and method used for controlling
          drpcountry_ele.select_by_index(20) <br>
          time.sleep(3) <br>
 
+   # Alerts-popups in selenium
+
+      There are 2 types of alerts.
+        1- HTML Alert: Nothing special with this one. 
+          You just locate as WebElement then click.   <br>
+
+        2- JS Alert: We cannot locate this web element
+           in the HTML code.  <br>
+           
+        You have to handle it differently
+        - We handle alerts using Alert class
+         creating ALERT object and 
+
+        - Alert alert = driver.switchTo.alert
+         There are 3 options :
+        - alert.accept()
+        - alert.dismiss()
+        - alert.sendKeys()
+        
+        
+   ======================================================        
+    - How many different types of JS alerts do we have?
+        - 3 types of JS Alerts.
+            - Information : You can only accept.
+            - Confirmation: You can accept or decline.
+            - Prompt    : You can accept, decline, and/or sendKeys.      
          
-         
+# Basic Authentication popups
+
+      We cannot pass values by using send_keys like on other alerts beacause it isn't a web elements 
+      we have to pass inject  the values directly on url links.  <br>
+
+      Syantax: https://username:password@siteurl.com
 
 
 
