@@ -316,9 +316,33 @@ Selenium WebDriver commands are set of functions and method used for controlling
       3. Broken Links <br>
          hyperlinks or URLs on a web page that are not functioning as expected and it doesn't have target are called broken links<br>
 
+   # Dropdown in selenium
+   To interact with dropdowns in selenium first we have to import select class <br>
+      from selenium.webdriver.support.ui import Select  <br>
 
 
+   We can identify or select options on multiple ways like: <br>
+      1. by visible_text() <br>
+      2. by value() <br>
+      3. by index() <br>
 
+  ** 1. By visible text() ** <br>
+         drpcountry_ele = driver.find_element(By.XPATH,"//div[@class='single_tab_div resp-tab-content resp-tab-content-active']//p//select") <br>
+         drpcountry = Select(drpcountry_ele) <br>
+         drpcountry.select_by_visible_text("Nepal") <br>
+
+   ** 2. By value() ** <br>
+        drpcountry_ele = Select(driver.find_element(By.XPATH, "//div[@class='single_tab_div resp-tab-content resp-tab-content-active']//p//select"))<br>
+       drpcountry_ele.select_by_value("NPL") <br>
+       time.sleep(5) <br>
+
+   ** 2. By index() ** <br>     
+         drpcountry_ele = Select(driver.find_element(By.XPATH, "//div[@class='single_tab_div resp-tab-content resp-tab-content-active']//p//select")) <br>
+         drpcountry_ele.select_by_index(20) <br>
+         time.sleep(3) <br>
+
+         
+         
 
 
 
