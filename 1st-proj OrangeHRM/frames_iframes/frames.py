@@ -8,6 +8,12 @@ driver = webdriver.Chrome()
 driver.get("https://www.globalsqa.com/demo-site/select-dropdown-menu/#google_vignette")
 driver.maximize_window()
 
+# Incase of independent frames
+
+driver.switch_to.frame("Id or a Name of frame")
+driver.find_element(By.PARTIAL_LINK_TEXT,"any button to click")
+driver.switch_to.default_content() #go back to main page
+
 driver.switch_to.frame("Id or a Name of frame")
 driver.find_element(By.PARTIAL_LINK_TEXT,"any button to click")
 driver.switch_to.default_content() #go back to main page
