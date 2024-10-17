@@ -25,6 +25,12 @@ driver.switch_to.frame(innerframe)
 
 driver.find_element(By.XPATH, "//input[@type='text']").send_keys("welcomee")
 
+# we can switch to parent frame also and we dont need to pass anything
+driver.switch_to.parent_frame()
+
+# also can return to main content page directly
+# driver.switch_to.default_content() 
+
 time.sleep(6)
 
 driver.quit()
