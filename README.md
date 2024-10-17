@@ -375,7 +375,22 @@ Selenium WebDriver commands are set of functions and method used for controlling
 
       Syantax: https://username:password@siteurl.com
 
+# Frames/iframes in selenium
 
+      We can handle frames in Selenium. A frame is an HTML element that keeps a document within another document in a page. HTML has the <frame> or <iframe> tags for embedding a frame inside a document. This method is used to identify a frame with the help of frame id and then switch the focus to that particular frame   <br>
+
+      eg:- 
+      driver.switch_to.frame("Id or a Name of frame")  <br>
+      driver.find_element(By.PARTIAL_LINK_TEXT,"any button to click")  <br>
+      driver.switch_to.default_content() #go back to main page  <br>
+
+# windows Handle in selenium: 
+      Selenium can access the another tab using   switch_to.windows_handle   method.  <br>
+      # to navigate to next window we use switch_to.window_handles in selenium   <br>
+       by using this function we are able to access or control next tab / windows on browser  <br>
+
+       ANd we switch window using windows id and it is given by  indexing  <br>
+       parent_window = windowsIDS[0]  <br>
 
 
  
