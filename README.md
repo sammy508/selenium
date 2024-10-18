@@ -401,8 +401,16 @@ Selenium WebDriver commands are set of functions and method used for controlling
  
  
 # Notification popups
-It appears when we lunch sites and it contains two buttons containing allow and block. we have to click one otherwise we cannot perfom any task on web pages. Its not like a authentication popups we cannot bypass it. We cannot bypass it and we cannot switch to this alert it comes from browser level.TO solve this or handle this we have to disable this alert from browser level for that we need to add some setting to browser level.
-WE add service object at the time of lunching the chrome browser.
+   It appears when we lunch sites and it contains two buttons containing allow and block. we have to click one otherwise we cannot perfom any task on web pages. Its not like a authentication popups we cannot bypass it. We cannot bypass it and we cannot switch to this alert it comes from browser level.TO solve this or handle this we have to disable this alert from browser level for that we need to add some setting to browser level.
+   WE add service object at the time of lunching the chrome browser.
+
+   we have a specific types of classes to and this specific class is used to specify the browser level setting and we can disable the popups.
+  
+   ops = webdriver.ChromeOptions()
+   ops.add_argument("--disable-notifications")
+   driver = webdriver.Chrome(ops)
+
+
   
 
 
