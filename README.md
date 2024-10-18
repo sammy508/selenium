@@ -377,7 +377,7 @@ Selenium WebDriver commands are set of functions and method used for controlling
 
 # Frames/iframes in selenium
 
-      We can handle frames in Selenium. A frame is an HTML element that keeps a document within another document in a page. HTML has the <frame> or <iframe> tags for embedding a frame inside a document. This method is used to identify a frame with the help of frame id and then switch the focus to that particular frame   <br>
+      We can handle frames in Selenium. A frame is an HTML element that keeps a document within another document in a page. HTML has the <frame> or <iframe> tags for embedding a frame inside a document. This method is used to identify a frame with the help of frame id and then switch the focus to that particular frame   
 
       eg:- 
       driver.switch_to.frame("Id or a Name of frame")  <br>
@@ -392,10 +392,17 @@ Selenium WebDriver commands are set of functions and method used for controlling
        ANd we switch window using windows id and it is given by  indexing  <br>
        parent_window = windowsIDS[0]  <br>
 
-
+#  Notification alerts/ popups
+      We cannot handle it directly by using alert commands because it a browser level popups. Its not even like authentication popups we can't by pass it.
+# Basic authentication Popups      
+      Authentication popups are types of popups and we cannot switch to them we have to handle it directly by bypassing the authentication value on browser.
+      
+      driver.get("https://Admin:Admin@the-internet.herokuapp.com/basic_auth")
  
  
-
+# Notification popups
+It appears when we lunch sites and it contains two buttons containing allow and block. we have to click one otherwise we cannot perfom any task on web pages. Its not like a authentication popups we cannot bypass it. We cannot bypass it and we cannot switch to this alert it comes from browser level.TO solve this or handle this we have to disable this alert from browser level for that we need to add some setting to browser level.
+WE add service object at the time of lunching the chrome browser.
   
 
 
