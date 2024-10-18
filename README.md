@@ -410,7 +410,13 @@ Selenium WebDriver commands are set of functions and method used for controlling
    ops.add_argument("--disable-notifications")
    driver = webdriver.Chrome(ops)
 
+# Web Tables
+   web tables also called HTML Tables, it is of 2 types:
+   1. Static table
+       static table consist of same type of data on table and keep unchanged
 
+   2. Dynamic table
+       Dynamic table contain different type of data and it keeep updating or changeable
   
 
 
