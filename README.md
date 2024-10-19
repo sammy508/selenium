@@ -415,9 +415,23 @@ Selenium WebDriver commands are set of functions and method used for controlling
    1. Static table
        static table consist of same type of data on table and keep unchanged
 
+       data = driver.find_element(By.XPATH,""" //*[@id="HTML1"]/div[1]/table//tr[5]/td[1] """).text
+       print(data)
+
    2. Dynamic table
-       Dynamic table contain different type of data and it keeep updating or changeable
-  
+       Dynamic table contain different type of data and it keeep updating or changeable.
+
+         rows = len(driver.find_elements(By.XPATH, "//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div"))
+          print(f"total num of users : {(rows)}")
+
+         time.sleep(5)
+
+         count = 0
+         for r in range(rows):
+            status = driver.find_element(By.XPATH, "//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div['+str(r)+']/div/div[5]").text
+
+            if status== "Enabled":
+               count+=1
 
 
 
