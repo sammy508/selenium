@@ -459,3 +459,20 @@ Selenium WebDriver commands are set of functions and method used for controlling
       print(mon)
 
 # Mouse operation in selenium
+   We can perform mouseover action in Selenium webdriver in Python by using the ActionChains class. We have to create an object of this class and then apply suitable methods on it.
+
+   Different methods available in mouse operation/ mouse action
+   1. Mouse hover
+   2. Right click
+   3. Double click
+   4. Drag and Drop
+
+   # Mouse hover
+       We shall use the move_to_element method and pass the element locator as a parameter. Then apply the perform method to actually perform this action. After hovering on the element, we can apply click action on it with the help of the click method.  
+
+       eg:
+         architect = driver.find_element(By.XPATH, "//span[normalize-space()='Architecture']")
+         designpattrn = driver.find_element(By.XPATH, "//span[normalize-space()='Design Pattern']")
+
+         action = ActionChains(driver= driver)
+         action.move_to_element(architect).move_to_element(designpattrn).click().perform()
