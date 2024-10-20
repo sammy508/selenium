@@ -451,3 +451,10 @@ Selenium WebDriver commands are set of functions and method used for controlling
     
     Date doesn't contains both next future date and previous date at once, its rare we can apply our own logic also
 
+    # date picker also can be on dropdown also
+    is also a easy to identify and interact with dropdown
+    small eg:
+      month = Select(driver.find_element(By.XPATH, "//*[@id='ui-datepicker-div']/div/div/select[1]"))
+      mon = month.select_by_visible_text("Dec")
+      print(mon)
+
