@@ -43,4 +43,3 @@ print(f"Total enabled user are {count}")
 print(f"Total disabled user are {rows -count}")
 driver.quit()
 
-# 9702586472

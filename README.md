@@ -433,6 +433,20 @@ Selenium WebDriver commands are set of functions and method used for controlling
             if status== "Enabled":
                count+=1
 
+# Date picker
+   The datepicker is tied to a standard form input field. Focus on the input (click, or use the tab key) to open an interactive calendar in a small overlay.
 
+   if the date picker is inside frame 1st we have to switch to frame and perform operation
+
+   Some date pickers allow you to type. In this case we can 
+   just use sendKeys method to enter the date we want.
+
+   If that does not work, we need to write our logic 
+   for this : 
+   1. Click on the field to trigger the date picker
+   2. Get the displayed date on the date picker and calculate
+      how many times you need to click left/right
+      to go to the right month/year. 
+   3. Once we go to the correct month/year, select the date.
 
 
