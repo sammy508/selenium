@@ -25,7 +25,7 @@ time.sleep(4)
 driver.find_element(By.XPATH, "//input[@id='datepicker']").click()
 
 month = "March"
-year = "2025"
+year = "2022"
 day = "25"
 
 while True:
@@ -36,7 +36,8 @@ while True:
         break
 
     else:
-        driver.find_element(By.XPATH, "//span[@class='ui-icon ui-icon-circle-triangle-e']").click()
+        # driver.find_element(By.XPATH, "//span[@class='ui-icon ui-icon-circle-triangle-e']").click()  # future date
+        driver.find_element(By.XPATH, "//span[@class='ui-icon ui-icon-circle-triangle-w']").click()  # previous dates
 
 dates = driver.find_elements(By.XPATH, "//*[@id='ui-datepicker-div']/table/tbody/tr/td")
 
