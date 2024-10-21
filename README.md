@@ -296,10 +296,10 @@ Selenium WebDriver commands are set of functions and method used for controlling
    ** How to locate checkboxes** <br>
    
    # 1. For specific checkboxes
-   # checkbox = driver.find_element(By.XPATH, "//label[@for='RESULT_CheckBox-8_0']").click()
+      checkbox = driver.find_element(By.XPATH, "//label[@for='RESULT_CheckBox-8_0']").click()
 
    # 2. for multiple checkboxes
-   checkboxes = driver.find_elements(By.XPATH, "//*[@id='q15']/table/tbody/tr[*]" )  <br>
+      checkboxes = driver.find_elements(By.XPATH, "//*[@id='q15']/table/tbody/tr[*]" )  <br>
 
    ** To select all checkboxes **  <br>
 
