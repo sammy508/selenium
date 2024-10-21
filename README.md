@@ -513,3 +513,20 @@ Selenium WebDriver commands are set of functions and method used for controlling
             action = ActionChains(driver=driver)
             action.drag_and_drop_by_offset(min_val,100,0).perform()  # (self=min, x=100, y=0) it takes values on x axis and y axis
             action.drag_and_drop_by_offset(max,-50, 0).perform()
+
+   # Scrolling pages in selenium
+
+      Scrolling to an Element: Use JavaScript to scroll the page until a specific element is visible.
+      Using scrollIntoView: The scrollIntoView() method allows you to scroll to a particular element smoothly.  
+
+      * eg:
+               driver.execute_script("arguments[0].scrollIntoView(true);", flag)
+               value = driver.execute_script("return window.pageYOffset;")
+               print("Num of pixel moved:", value)
+               time.sleep(5)
+
+
+               # scroll page directly to the end 
+               
+               driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
+               time.sleep(2)      
