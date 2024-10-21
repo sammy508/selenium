@@ -504,3 +504,12 @@ Selenium WebDriver commands are set of functions and method used for controlling
 
          time.sleep(2)
          acton.drag_and_drop(washington, cntry).perform()
+
+   # Slider operation
+               Here is the same process like drag and drop it also perfom under ActionChains() method.
+               and it uses like x and y coordinates to move the elements and track the movement of element.
+
+      * eg : 
+            action = ActionChains(driver=driver)
+            action.drag_and_drop_by_offset(min_val,100,0).perform()  # (self=min, x=100, y=0) it takes values on x axis and y axis
+            action.drag_and_drop_by_offset(max,-50, 0).perform()
