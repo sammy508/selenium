@@ -470,9 +470,36 @@ Selenium WebDriver commands are set of functions and method used for controlling
    # Mouse hover
        We shall use the move_to_element method and pass the element locator as a parameter. Then apply the perform method to actually perform this action. After hovering on the element, we can apply click action on it with the help of the click method.  
 
-       eg:
+       * eg:
          architect = driver.find_element(By.XPATH, "//span[normalize-space()='Architecture']")
          designpattrn = driver.find_element(By.XPATH, "//span[normalize-space()='Design Pattern']")
 
          action = ActionChains(driver= driver)
          action.move_to_element(architect).move_to_element(designpattrn).click().perform()
+
+   # Right click in selenium
+      We can perform right click on an element in Selenium with the help of Action Chains class. 
+      * eg:
+       
+         architect = driver.find_element(By.XPATH, "//span[normalize-space()='Architecture']")
+         We use context_click() methods and we have to pass perfom() method with context_click() to perfom the operation.
+
+         action = ActionChains(driver=driver)
+         action.context_click(architect).perform()    
+
+   #  drag and drop in selenium
+
+      It demonstrates how to implement drag-and-drop functionality using Selenium WebDriver. Drag and drop actions are essential for testing web applications that utilize this interaction for features like reordering items, moving elements between containers, or performing complex gestures.
+
+      It also use Actionchains() methos to perfom:
+
+      * eg:
+
+      
+         washington =driver.find_element(By.XPATH, "//div[@id='box3']")
+         cntry = driver.find_element(By.XPATH, "//div[@id='box103']")
+
+         acton = ActionChains(driver=driver)
+
+         time.sleep(2)
+         acton.drag_and_drop(washington, cntry).perform()
