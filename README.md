@@ -490,6 +490,7 @@ Selenium WebDriver commands are set of functions and method used for controlling
    #  drag and drop in selenium
 
       It demonstrates how to implement drag-and-drop functionality using Selenium WebDriver. Drag and drop actions are essential for testing web applications that utilize this interaction for features like reordering items, moving elements between containers, or performing complex gestures.
+      It takes two arguments source and destionation in below example washington is  source and cntry is destination.
 
       It also use Actionchains() methos to perfom:
 
