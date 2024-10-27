@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 import time
+import os
 driver = webdriver.Chrome()
 
 driver.get("https://www.dummyticket.com/dummy-ticket-for-visa-application/")
@@ -21,5 +22,7 @@ for country in countrieslist:
         break
 
 time.sleep(5)
+
+driver.save_screenshot(f"{os.getcwd()}\snapshot.png")  # here it takes directory and file name
 
 driver.quit()
