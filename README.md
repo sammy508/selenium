@@ -595,3 +595,16 @@ Selenium WebDriver commands are set of functions and method used for controlling
             driver.get_screenshot_as_file()
             driver.get_screenshot_as_base64()# in binary format
 
+   # Switch window and tab
+         we can open new application on new tab and also on a new window as well
+
+       *  1.  Switch to new tab
+            EG: 
+               driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+
+               driver.switch_to.new_window('tab')  # it loads another application on new tab
+               driver.get("https://www.nopcommerce.com/en/demo")
+
+      * 2. switch to new window
+
+               driver.switch_to.new_window('window')  # It loads another application on new tab
