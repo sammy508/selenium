@@ -612,6 +612,10 @@ Selenium WebDriver commands are set of functions and method used for controlling
 # Headless Mode in selenium
       Headless mode in selenium means that script run on backend without popping the launching sites.
 
+               ops = webdriver.ChromeOptions()
+               ops.headless()# Older approach
+               ops.add_argument('--headless') is used to lunch script headlessly
+
       Advantages:
       1. script runs at backend so you can work on other tabs and tasks
       2. It increases the perfoimances of test scripts
@@ -621,4 +625,16 @@ Selenium WebDriver commands are set of functions and method used for controlling
       1. Its hard to understand
       2. You cant learn and know the application flows
 
-      
+   * Eg : 
+            def Headless_chrome():
+               ops = webdriver.ChromeOptions()
+               ops.headless()# Older approach
+               ops.add_argument('--headless')   # new approach after new updated version
+               driver = webdriver.Chrome(options=ops)
+               return driver
+
+            driver = Headless_chrome()
+            driver.get('https://www.facebook.com/')
+            print(driver.title)
+            print(driver.current_url)
+            driver.quit()
