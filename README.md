@@ -608,3 +608,17 @@ Selenium WebDriver commands are set of functions and method used for controlling
       * 2. switch to new window
 
                driver.switch_to.new_window('window')  # It loads another application on new tab
+
+# Headless Mode in selenium
+      Headless mode in selenium means that script run on backend without popping the launching sites.
+
+      Advantages:
+      1. script runs at backend so you can work on other tabs and tasks
+      2. It increases the perfoimances of test scripts
+      3. Time saving 
+
+      Disadvantage:
+      1. Its hard to understand
+      2. You cant learn and know the application flows
+
+      
