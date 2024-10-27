@@ -530,3 +530,68 @@ Selenium WebDriver commands are set of functions and method used for controlling
                
                driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
                time.sleep(2)      
+
+# File Upload and Download in selenium
+  
+  * 1. 
+   File upload and Download in selenium is quite complex and it's not recommended to do through automation because it have to interact through      lots of phases so it recommend to do it manually.
+
+   * Eg: file upload
+         driver = webdriver.Chrome()
+         driver.get("https://practice.expandtesting.com/upload")
+         driver.maximize_window()
+
+         time.sleep(5)
+         driver.find_element(By.XPATH,"//input[@id='fileInput']").send_keys("D:\pyhton projects\todos.txt")
+         time.sleep(5)
+
+         driver.find_element(By.XPATH,"//button[@id='fileSubmit']").click()
+         time.sleep(9)
+
+         driver.quit()
+
+   *  file download
+
+               location = os.getcwd()  # it gives the location of the current working directory
+
+               def chrome_setup():
+                  
+                  # Download file in desired locations
+                  prefrences = {"download.default_directory":location}
+                  ops = webdriver.ChromeOptions()
+                  ops.add_experimental_option("prefs",prefrences)
+
+                  driver = webdriver.Chrome()
+                  return driver
+
+               driver = chrome_setup()
+               driver.get("https://file-examples.com/index.php/sample-documents-download/")
+               driver.maximize_window()
+
+               driver.find_element(By.XPATH, "//*[@id='table-files']/tbody/tr[1]/td[3]/a").click()
+
+* Notes: It holds some errors like not finding elements on page so its a format how can we do it
+
+# Bootstrap dropdown in selenium
+
+   The bootstrap dropdown is an enhanced part of the dropdown where you will deal with UL, LI, DIV, SPAN etc tag of HTML.
+   To handle this kind of drop-down we have to use findElements method and then we can run a for loop to get specific elements
+
+   * eg:
+         driver.find_element(By.XPATH, "//*[@id='select2-billing_country-container']").click()
+         driver.implicitly_wait(5)
+
+         countrieslist = driver.find_elements(By.XPATH,"//*[@id='billing_country']/*")
+
+         time.sleep(5)
+         for country in countrieslist:
+            if country.text == "Argentina":
+               country.click()
+               break
+   # snapshot in selenium
+    We can take snapshot using different approach like 
+    * Eg:
+            driver.save_screenshot(f"{os.getcwd()}\snapshot.png")  # here it takes directory and file name
+            driver.get_screenshot_as_file()
+            driver.get_screenshot_as_base64()# in binary format
+

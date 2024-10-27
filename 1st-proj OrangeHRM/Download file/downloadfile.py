@@ -26,7 +26,7 @@ driver = chrome_setup()
 driver.get("https://file-examples.com/index.php/sample-documents-download/")
 driver.maximize_window()
 
-driver.find_element(By.XPATH, "//*[@id='table-files']/tbody/tr[1]/td[3]/a")
+driver.find_element(By.XPATH, "//*[@id='table-files']/tbody/tr[1]/td[3]/a").click()
 
 time.sleep(5)
 driver.quit()

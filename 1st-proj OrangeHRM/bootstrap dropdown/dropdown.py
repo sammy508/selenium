@@ -24,5 +24,8 @@ for country in countrieslist:
 time.sleep(5)
 
 driver.save_screenshot(f"{os.getcwd()}\snapshot.png")  # here it takes directory and file name
+# driver.get_screenshot_as_file()
+driver.get_screenshot_as_base64()# in binary format
+
 
 driver.quit()
