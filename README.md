@@ -638,3 +638,8 @@ Selenium WebDriver commands are set of functions and method used for controlling
             print(driver.title)
             print(driver.current_url)
             driver.quit()
+
+# Data driven testing
+   At first we have to install Openpyxl packages. it doesn't comes with python.
+   To install it :
+   pip install openpyxl            

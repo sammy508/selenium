@@ -12,3 +12,6 @@ driver.get('https://www.facebook.com/')
 print(driver.title)
 print(driver.current_url)
 driver.quit()
+
+
+# ITs all same on edge browser as well only change chrome to edge
