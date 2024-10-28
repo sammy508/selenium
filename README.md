@@ -655,4 +655,6 @@ Selenium WebDriver commands are set of functions and method used for controlling
 
       Notes: Its same for alll the test cases
       
-                
+   * Here we 1st create a excel util module separately and reuse it              
+      The process is same for all excel automation testing so we can reuse it
+      
