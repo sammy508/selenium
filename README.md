@@ -642,4 +642,17 @@ Selenium WebDriver commands are set of functions and method used for controlling
 # Data driven testing
    At first we have to install Openpyxl packages. it doesn't comes with python.
    To install it :
-   pip install openpyxl            
+   pip install openpyxl    
+
+   # Things we do in
+    * Automation code
+      * excel operation
+      * data read 
+      * data write
+      * count rows/ columns
+      * filling color to cells
+
+
+      Notes: Its same for alll the test cases
+      
+                
